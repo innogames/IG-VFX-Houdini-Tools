@@ -1,0 +1,20 @@
+{
+    "path": "$INNOGAMES", 
+    "load_package_once": true, 
+    "env": [
+        {
+            "current_version": "18.5.466"
+        }, 
+        {
+            "INNOGAMES": "C:\InnoGamesHoudiniSetup"
+        }, 
+        {
+            "PATH": {
+                "method": "prepend", 	
+                "value": [
+                    "$INNOGAMES/bin"
+                ]
+            }
+        }
+    ]
+}
