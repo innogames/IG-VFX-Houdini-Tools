@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.IG-VFX-Houdini-Tools.iml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml

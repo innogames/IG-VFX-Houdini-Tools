@@ -331,8 +331,8 @@ In Unity I rewrite the same calculation in a shader to have the same result in t
 Here the shader function for Unity:
 ```ruby
 float _Speed;
-float _StrenghX;
-float _StrenghY;
+float _StrengthX;
+float _StrengthY;
 float _useSymX;
 float _useSymY;
 
@@ -352,8 +352,8 @@ float4 particleMotion(float4 position, float4 morphTarget, float animationOffset
     float linearG = sinTime * color.g;
     float symetryR = absTime * -constantBiasR;
     float symetryG = absTime * -constantBiasG;
-    float switchR = lerp(linearR * _StrenghX, symetryR * _StrenghX, _useSymX);
-    float switchY = lerp(linearG * _StrenghY, symetryG * _StrenghY, _useSymY);
+    float switchR = lerp(linearR * _StrenghX, symetryR * _StrengthX, _useSymX);
+    float switchY = lerp(linearG * _StrenghY, symetryG * _StrengthY, _useSymY);
     position.x = lerp(position.x, morphTarget.x, switchR); 
     position.z = lerp(position.z, morphTarget.z, switchY);
     
