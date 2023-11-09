@@ -237,7 +237,10 @@ I needed something to bake simple gradients, distortions maps, colors etc, and t
 I found something here in cgwiki from Matt Estela.<br> 
 https://www.tokeru.com/cgwiki/HoudiniCops#Using_cops_as_a_renderer <br>  
 Which is based on Konstantin Magnus render solution in cops.  
-https://www.youtube.com/watch?v=iDeE_XtaKk0&t=2s&ab_channel=KonstantinMagnus <br>  
+https://www.youtube.com/watch?v=iDeE_XtaKk0&t=2s&ab_channel=KonstantinMagnus <br> 
+Here a detailed documentation about the Custom Raytracer.
+https://procegen.konstantinmagnus.de/custom-raytracer
+
 I took this solutions and build my own rendering GUI and created a HDA out of it.
 <br>
 
