@@ -210,6 +210,8 @@ The Group By Color node creates groups based on a specific color value.
 #### Overview
 This node sets vertex colors by a range on points, prims, or elements. It can be used to generate vertex color ranges.
 <br>
+> **BUG NOTE:** When the HDA is initialized for the first time in the SOP Network, the first index of the selector will not work.
+Workflow: After the first initialization, add a selector, delete it, and add a new one. From this point on, all other selectors will work.
 
 ![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/SetVertexColors_01.gif)
 #### Properties
