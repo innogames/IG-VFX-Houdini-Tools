@@ -49,17 +49,17 @@ The Global Executer takes a node as input and extracts the name of a parameter a
 It then finds all nodes in the current Houdini scene and checks if they are of the same type as the source node. If so, it executes the specified parameter on the target node.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/executer_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/executer_01.gif)
 Spread: This function takes a node as input, along with a source node and a list of parameter names from its parameters. 
 It finds all nodes in the scene and checks if they have the same name as the source node. If so, it copies the values of the specified parameters from the source node to the target node.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/CopyParms_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/CopyParms_01.gif)
 Rename Nodes: This function takes a node as input and receives the path to a root node, a string to replace, and a new string. 
 It then finds all children of the root node and renames nodes containing the old string in their name by replacing it with the new string.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/Nodes_Renamed_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/Nodes_Renamed_01.gif)
 #### Properties Global Executer
 | Properties        | Description                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
@@ -88,7 +88,7 @@ This can be helpful when you want to export separate meshes as FBX files, for in
 By setting a unique path for each mesh using this node, you can ensure that they are exported as separate objects.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/attrib_path_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/attrib_path_01.gif)
 #### Properties
 | Properties | Description                |
 |------------|----------------------------|
@@ -100,7 +100,7 @@ By setting a unique path for each mesh using this node, you can ensure that they
 This node takes UV coordinates as input and generates a color ramp based on those coordinates.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/color_uv_ramp_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/color_uv_ramp_01.gif)
 #### Properties
 | Properties        | Description                                                      |
 |-------------------|------------------------------------------------------------------|
@@ -130,7 +130,7 @@ The Dot Mask tool creates black and white areas based on dot product values,
 representing alignment or deviation from a target point.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/dot_mask_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/dot_mask_01.gif)
 #### Properties
 | Properties        | Description                                                      |
 |-------------------|------------------------------------------------------------------|
@@ -184,7 +184,7 @@ The Get Min Max node grabs the min and max values of an attribute for each frame
 The min and max values are set as detail attributes.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/min_max_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/min_max_01.gif)
 #### Properties
 | Properties                  | Description                                                          |
 |-----------------------------|----------------------------------------------------------------------|
@@ -213,7 +213,7 @@ This node sets vertex colors by a range on points, prims, or elements. It can be
 > **BUG NOTE:** When the HDA is initialized for the first time in the SOP Network, the first index of the selector will not work.
 Workflow: After the first initialization, add a selector, delete it, and add a new one. From this point on, all other selectors will work.
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/SetVertexColors_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/SetVertexColors_01.gif)
 #### Properties
 | Properties         | Description                                                  |
 |--------------------|--------------------------------------------------------------|
@@ -246,7 +246,7 @@ https://procegen.konstantinmagnus.de/custom-raytracer
 I took this solutions and build my own rendering GUI and created a HDA out of it.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/SimpleRenderer_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/SimpleRenderer_01.gif)
 #### Properties Main
 | Properties           | Description                                  |
 |----------------------|----------------------------------------------|
@@ -281,7 +281,7 @@ The Split By Attribute node organizes objects based on a specified attribute in 
 Additional nodes can be added to the split network, and they are connected in a specific order.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/SplitByAttribute_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/SplitByAttribute_01.gif)
 #### Properties
 | Properties           | Description                           |
 |----------------------|---------------------------------------|
@@ -296,7 +296,7 @@ The Swipe Mesh node is an extension of the sweep node with additional custom fea
 It allows saving vertex alpha into the UV1 channel, enabling separation of vertex alpha from particle alpha in Unity. It integrates resample features, providing flexibility in density and detail.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/SwipeMesh_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/SwipeMesh_01.gif)
 > **Note:** Please refer to the documentation for sweep and resample node properties for more details:
 > - Sweep Node: https://www.sidefx.com/docs/houdini/nodes/sop/sweep.html
 > - Resample Node: https://www.sidefx.com/docs/houdini/nodes/sop/resample.html
@@ -314,7 +314,7 @@ It allows saving vertex alpha into the UV1 channel, enabling separation of verte
 The Uv By Color node grabs vertex colors RGB as a group to layout UV packages dynamically. It's useful for creating simple UV maps layouts.
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/UvByRGB_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/UvByRGB_01.gif)
 #### Properties
 | Properties                     | Description                                    |
 |--------------------------------|------------------------------------------------|
@@ -367,7 +367,7 @@ float4 particleMotion(float4 position, float4 morphTarget, float animationOffset
 ```
 <br>
 
-![Example](https://github.com/innogames/IgHoudiniTools/blob/main/Docs/Images/VertexMotion_01.gif)
+![Example](https://github.com/innogames/IG-VFX-Houdini-Tools/blob/main/Docs/Images/VertexMotion_01.gif)
 #### Visualize Properties
 | Properties               | Description                           |
 |--------------------------|---------------------------------------|
